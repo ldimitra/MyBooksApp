@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyBooksApp</string>
+    <string name="name_of_author">Name of author:</string>
+    <string name="year_of_birth">Year of birth:</string>
+    <string name="year_of_death">Year of death:</string>
+    <string name="downloads">Downloads:</string>
+</resources>

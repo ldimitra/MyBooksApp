@@ -35,4 +35,6 @@ fun AuthorResponse.mapToDomain() = Author(
     name = this.name ?: ""
 )
 
-fun FormatResponse.mapToDomain() = Format(image = this.image ?: "")
+fun FormatResponse.mapToDomain() = Format(
+    image = this.image ?: ""
+)

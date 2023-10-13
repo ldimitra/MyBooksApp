@@ -34,15 +34,17 @@
             tools:listitem="@layout/book_layout_item" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:visibility="@{viewModel.screenState == ScreenState.ERROR? View.VISIBLE : View.GONE}"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/something_went_wrong"
-            tools:visibility="gone" />
+            app:srcCompat="@drawable/error_icon"
+            tools:visibility="visible" />
 
         <com.facebook.shimmer.ShimmerFrameLayout
             android:id="@+id/shimmerLayout"
@@ -74,7 +76,6 @@
                 <include layout="@layout/data_placeholder" />
             </LinearLayout>
         </com.facebook.shimmer.ShimmerFrameLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

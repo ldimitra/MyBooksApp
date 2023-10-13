@@ -169,11 +169,11 @@
         </ScrollView>
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_gravity="center"
             android:visibility="@{viewModel.screenState == ScreenState.ERROR? View.VISIBLE : View.GONE}"
-            app:srcCompat="@drawable/something_went_wrong"
+            app:srcCompat="@drawable/error_icon"
             tools:visibility="gone" />
 
         <com.google.android.material.progressindicator.LinearProgressIndicator
